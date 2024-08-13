@@ -1,0 +1,14 @@
+CREATE DATABASE data;
+USE data;
+CREATE TABLE users(
+  user_id INTEGER PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  phone VARCHAR NOT NULL,
+  gender VARCHAR(12) NOT NULL,
+  address TEXT NOT NULL
+);
+
+INSERT INTO `users` (`user_id`, `name`, `email`, `phone`, `gender`, `address`) VALUES ('1', 'Andi', 'andi@gmail.com', '0821112233', 'L', 'Jalan Karang Anyar Raya'), ('2', 'Budi', 'budi@gmail.com', '087887655271', 'L', 'Jalan Mataram Kuno'),('3', 'Ciko', 'ciko@gmail.com', '087883392692', 'L', 'Jalan Asem Anyar');,('4', 'Della', 'della@gmail.com', '087844753406', 'P', 'Jalan Asem Anyar');,('5', 'Elsa', 'elsa@gmail.com', '087821654045', 'P', 'Jalan Asem Anyar');,('6', 'Fandi', 'fandi@gmail.com', '087894052629', 'L', 'Jalan Asem Anyar');,('7', 'Gina', 'gina@gmail.com', '087831804404', 'P', 'Jalan Asem Anyar');,('8', 'Hanum', 'hanum@gmail.com', '087896189550', 'P', 'Jalan Asem Anyar');,('9', 'Isabella', 'isabella@gmail.com', '087817621356', 'P', 'Jalan Asem Anyar');,('10', 'Jamal', 'jamal@gmail.com', '082183392692', 'L', 'Jalan Kalimantan Utara');,('11', 'Kania', 'kania@gmail.com', '082144753406', 'P', 'Jalan Kalimantan Utara');,('12', 'Luna', 'luna@gmail.com', '082121654045', 'P', 'Jalan Kalimantan Utara');,('13', 'Maya', 'maya@gmail.com', '082194052629', 'P', 'Jalan Kalimantan Utara');,('14', 'Naya', 'naya@gmail.com', '082131804404', 'P', 'Jalan Kalimantan Utara');,('15', 'Olga', 'olga@gmail.com', '082196189550', 'L', 'Jalan Kalimantan Utara');,('16', 'Patra', 'patra@gmail.com', '082117621356', 'L', 'Jalan Sukabumi');,('17', 'Dona', 'dona@gmail.com', '081383392692', 'P', 'Jalan Sukabumi');,('18', 'Rani', 'rani@gmail.com', '081344753406', 'P', 'Jalan Sukabumi');,('19', 'Sania', 'sania@gmail.com', '081321654045', 'P', 'Jalan Sukabumi');,('20', 'Tika', 'tika@gmail.com', '081394052629', 'P', 'Jalan Sukabumi');,('21', 'Umar', 'umar@gmail.com', '081331804404', 'L', 'Jalan Sukabumi');,('22', 'Vina', 'vina@gmail.com', '081396189550', 'P', 'Jalan Pulogebang');,('23', 'Wati', 'wati@gmail.com', '088183392692', 'P', 'Jalan Pulogebang');,('24', 'Andra', 'andra@gmail.com', '088144753406', 'L', 'Jalan Pulogebang');,('25', 'Zahra', 'zahra@gmail.com', '088121654045', 'P', 'Jalan Pulogebang');,('26', 'Santika', 'santika@gmail.com', '088194052629', 'P', 'Jalan Pulogebang');,('27', 'Siska', 'siska@gmail.com', '088131804404', 'P', 'Jalan Pattimura');,('28', 'Hani', 'hani@gmail.com', '082183392692', 'P', 'Jalan Pattimura');,('29', 'Beni', 'beni@gmail.com', '082144753406', 'L', 'Jalan Pattimura');,('30', 'Tommy', 'tommy@gmail.com', '082121654045', 'L', 'Jalan Pattimura');
+
+SELECT name AS a, phone AS b, address c FROM users;
